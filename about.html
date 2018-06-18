@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xml:lang="en-US" lang="en-US">
+    <head>
+        <title>Foodstory by Nayomi</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+        <meta name="keywords" content="">
+        <meta name="description" content="create food recipes and upload pictures that show tasty creativity easy to practice DIY" />
+        <meta name="robots" content="all,index,follow" />        
+        <meta name="author" content="trickle" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="icon" href="images/cittishop-title.png" />
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'  type='text/css' />
+        <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:300,400)' rel='stylesheet'  type='text/css' />
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css' />
+        <script src="script/jquery-latest.min.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function () {
+                $(window).bind('scroll', function () {
+                    if ($(window).scrollTop() > 5) {
+                        $('.smallCenterContent').addClass('fixed');
+                    } else {
+                        $('.smallCenterContent').removeClass('fixed');
+                    }
+                });
+            });
+
+            $(document).ready(function () {
+                $('.open-menu').on('click', function () {
+                    $('.overlay').toggleClass('open');
+                });
+
+                $('.menu-button').click(function () {
+                    $(this).toggleClass('menu-open');
+                });
+
+                $('.close-menu').on('click', function () {
+                    $('.overlay').removeClass('open');
+                    $('.menu-button').removeClass('menu-open');
+                });
+            });
+        </script>
+    </head>
+    <body class="bodyAbout">
+        <div class="container">
+            <div class="content2">
+                <div class="framed">
+                    <div class="frameContents">
+                        <div class="bioName">
+                            <p>Hello! My name is Naomi.</p>
+                        </div>
+                        <div class="bioState">
+                            <p>A foodie, sassy and charming, Foodstory presents to u my delectable art and craft of preparing food, and am loving every second of it!</p>
+                        </div>
+                        <div class="bioContacts">
+                            <p>Contact me directly...</p>
+                            <ul>
+                                <li><a>+254 716107731</a></li>
+                                <li><a>mail@gmail.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="bioForm">
+                            <p>...or leave a comment below and I will be glad to respond to you.</p>
+                            <form class="">
+                                <div class="form">
+                                    <div class="formFields">
+                                        <div class="col-xs-6 animated fadeInLeft visible" data-animation="fadeInLeft" data-animation-delay="300">
+                                            <div> 
+                                                <input type="email" name="mail" id="mail" class=" ask light requiredField ff-cf-email ff-contact-field-not-valid" placeholder="Email">
+                                                <input type="text" name="subject" id="subject" class=" ask light requiredField ff-cf-subject ff-contact-field-not-valid" placeholder="Subject">
+                                                <textarea name="message" id="message" class=" searchText textarea light requiredField ff-cf-message ff-contact-field-not-valid" placeholder="Message"></textarea>
+                                            </div>
+                                            <div class="formSubmit">
+                                                <button type="submit" id="submit" name="submit" class="light bigbuttons btn-primary-dark bold-button">Send Message</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </form>
+                        </div>
+                        <div class="contact-rows" >
+                            <a class="fa fa-facebook"></a>
+                            <a class="fa fa-instagram"></a>
+                            <a class="fa fa-youtube-play"></a>
+                            <a class="fa fa-home" href="index.html"></a>
+                            <a class="fa fa-file-text-o" href="recipes.html"></a>
+                            <a class="fa fa-road" href="foodtravels.html"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

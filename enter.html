@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <xml>
+                <?php
+                if (isset($_GET['resulting'])) {
+                ?>
+                <hgroup><h9><?php echo base64_decode($_GET['resulting']); ?></h9></hgroup>
+                <?php
+                }
+                ?>                
+            </xml>
+
+            Signin
+            <form method="post" name="userSignin" action="loginprocess.php" accept-charset="UTF-8">
+                <input type="text" name="myname" id="comment" placeholder="Name" tabindex="1" >
+                <input type="email" name="myemail" id="email" value="" placeholder="Email" tabindex="2" >
+                <input tabindex="4" type="reset" value="Clear">
+                <input tabindex="3" type="submit" value="Post">
+            </form>
+        </div>
+
+        <div>
+            signup
+            
+            <form method="post" name="userSignup" action="backend.php" accept-charset="UTF-8">
+                <input placeholder="First name" type='text' name='surname' value=''/>
+                <input placeholder="Other names" type='text' name='othernames' value=''/>
+                <input placeholder="Email: required field" type='email' name='mail' value='' maxlength="50" />
+                <input placeholder="Password > 8 characters" type='password' name='password' value='' maxlength="20" />
+                <input placeholder="Confirm password" type='password' name='confpassword' value='' maxlength="20" />
+                <input type="reset" value="Clear">
+                <input style="width:200px;" type="submit" name="submit" value="Create" />
+            </form>
+        </div>
+    </body>
+</html>

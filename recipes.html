@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xml:lang="en-US" lang="en-US">
+    <head>
+        <title>Foodstory by Nayomi</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+        <meta name="keywords" content="">
+        <meta name="description" content="create food recipes and upload pictures that show tasty creativity easy to practice DIY" />
+        <meta name="robots" content="all,index,follow" />        
+        <meta name="author" content="trickle" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="icon" href="images/cittishop-title.png" />
+        <link href="seethis.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'  type='text/css' />
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css' />
+        <script src="script/jquery-latest.min.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function () {
+                $(window).bind('scroll', function () {
+                    if ($(window).scrollTop() > 5) {
+                        $('.smallCenterContent').addClass('fixed');
+                    } else {
+                        $('.smallCenterContent').removeClass('fixed');
+                    }
+                });
+            });
+
+            $(document).ready(function () {
+                $('.open-menu').on('click', function () {
+                    $('.overlay').toggleClass('open');
+                });
+
+                $('.menu-button').click(function () {
+                    $(this).toggleClass('menu-open');
+                });
+
+                $('.close-menu').on('click', function () {
+                    $('.overlay').removeClass('open');
+                    $('.menu-button').removeClass('menu-open');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <div class="topSmallContent">
+                    <a id="menu-button" class="menu-button open-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </a>
+                    <!-- Overlay Navigation Menu -->
+                    <div class="overlay">
+                        <div class="menuContainer">
+                            <div>
+                                <input type="search" class="search" placeholder="I am looking for..." />
+                            </div>
+                            <br>
+                            <nav>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="foodtravels.html">Food Travels</a></li>
+                                    <li><a href="recipes.html">Recipes</a></li>
+                                    <li><a href="about.html">About me</a></li>
+                                </ul>
+                                <div class="social" >
+                                    <a class="fa fa-facebook" style="font-size: 40px;font-weight: 400;"></a>
+                                    <a class="fa fa-instagram" style="font-size: 40px;font-weight: 400;"></a>
+                                    <a class="fa fa-youtube-play" style="font-size: 40px;font-weight: 400;"></a>
+                                </div>
+                                <br>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="smallCenterContent">
+                        <div class="smallTitle"><h3>recipes</h3></div>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    sdfjkhksjf
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
